@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Laura Cordoba es una docente y artista plástica argentina dedicada al collage, dibujo y pintura.">
+<meta name="keywords" content="collage, dibujo, pintura, talleres, artista, arte, tecnicas mixtas">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
@@ -28,9 +30,20 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
   rel="stylesheet"
 />
-<link rel="stylesheet" href="/estilos.css">
+<link rel="stylesheet" href="/css/estilos.css">
+
 
 <title>Laura Cordoba | Artista plástica</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WQBL0MV84E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WQBL0MV84E');
+</script>
+
 </head>
 <body>
 <header>
@@ -125,32 +138,31 @@
       <div class="container d-flex align-items-center justify-content-center text-center h-100">
         <div class="text-white">
           <h1 class="text-white" style="font-size: 80px; letter-spacing: 10px;" >laura cordoba</h1>
-          <h5 class="text-white" style="font-size: 60px; margin-bottom: 20px;" >artista plástica</h5>
+          <h2 class="text-white" style="font-size: 60px; margin-bottom: 20px;" >artista plástica</h2>
           <a
-            class="btn btn-outline-light btn-lg m-2"
+            class="btn btn-outline-light btn-lg m-2 botonVideo"
             href="/pages/collages.html"
             role="button"
-            rel="nofollow"
             >Collage</a
           >
           <a
-            class="btn btn-outline-light btn-lg m-2"
+            class="btn btn-outline-light btn-lg m-2 botonVideo"
             href="/pages/dibujos.html"
             role="button"
             >Dibujo</a
           >
           <a
-          class="btn btn-outline-light btn-lg m-2"
+          class="btn btn-outline-light btn-lg m-2 botonVideo"
           href="/pages/pintura.html"
           role="button"
           >Pintura</a
         >
-        <a
-        class="btn btn-light btn-lg m-2"
-        href="/pages/talleres.html"
-        role="button"
-        >Talleres</a
-      >
+          <a
+          class="btn btn-light btn-lg m-2 botonVideo--taller"
+          href="/pages/talleres.html"
+          role="button"
+          >Talleres</a
+        > 
         </div>
       </div>
     </div>
@@ -158,45 +170,45 @@
 </header>
 <main>
 
-    <div class="grilla">
-        <section class="tituloSec"><h2>Collages</h2></section>
-        <section class="textoSec">A veces paso el tiempo con la tijera en la mano, mirando los espacios vacíos y los llenos. Jugando a recortar un equilibrio imposible, subiendo pétalo por pétalo los escalones del papel.</section>
-        <section class="imagenSec"><img class="imagenCaja" src="/images/IMG_7092.jpg" alt="Collages"></section>
-        <section class="botonSec"><a href="/pages/collages.html">Conocé todos los collages</a></section>
+    <div class="seccion">
+        <section class="seccion__titulo"><h2>Collages</h2></section>
+        <section class="seccion__texto">A veces paso el tiempo con la tijera en la mano, mirando los espacios vacíos y los llenos. Jugando a recortar un equilibrio imposible, subiendo pétalo por pétalo los escalones del papel.</section>
+        <section class="seccion__imagen"><img class="seccion__jpg" src="/images/collages-laura-cordoba.jpg" alt="Collages de Laura Cordoba"></section>
+        <section class="seccion__boton"><a href="/pages/collages.html">Conocé todos los collages</a></section>
     </div>
 
-    <div class="grilla2">
-        <section class="tituloSec"><h2>Dibujos</h2></section>
-        <section class="textoSec">Hechos con grafito o tinta, sobre papel, hojas de libro o postales. Enmarcados de forma artesanal y a medida. Con muchas historias detrás y unos cuántos años de intentos, estudio, prueba, error pero sobre todo mucho amor y pasión. Tienen en común el recorrido cabeza-corazón-mano, camino que sigo eligiendo descubrir día a día.</section>
-        <section class="imagenSec"><img class="imagenCaja" src="/images/dibujo.jpg" alt="Dibujos"></section>
-        <section class="botonSec"><a href="/pages/dibujos.html">Conocé todos los dibujos</a></section>
+    <div class="seccion--invertida">
+        <section class="seccion__titulo"><h2>Dibujos</h2></section>
+        <section class="seccion__texto">Hechos con grafito o tinta, sobre papel, hojas de libro o postales. Enmarcados de forma artesanal y a medida. Con muchas historias detrás y unos cuántos años de intentos, estudio, prueba, error pero sobre todo mucho amor y pasión. Tienen en común el recorrido cabeza-corazón-mano, camino que sigo eligiendo descubrir día a día.</section>
+        <section class="seccion__imagen"><img class="seccion__jpg" src="/images/dibujos-laura-cordoba.jpg" alt="Dibujos de Laura Cordoba"></section>
+        <section class="seccion__boton"><a href="/pages/dibujos.html">Conocé todos los dibujos</a></section>
     </div>
 
-    <div class="grilla">
-        <section class="tituloSec"><h2>Pintura</h2></section>
-        <section class="textoSec">Un mismo lenguaje, distintas pinceladas: acrílico, barniz, técnicas mixtas. Una parte del trabajo donde explotan las formas y el color.
+    <div class="seccion">
+        <section class="seccion__titulo"><h2>Pintura</h2></section>
+        <section class="seccion__texto">Un mismo lenguaje, distintas pinceladas: acrílico, barniz, técnicas mixtas. Una parte del trabajo donde explotan las formas y el color.
         </section>
-        <section class="imagenSec"><img class="imagenCaja" src="/images/pintura.jpg" width="512px" alt="Pintura"></section>
-        <section class="botonSec"><a href="/pages/pintura.html">Conocé todas las pinturas</a></section>
+        <section class="seccion__imagen"><img class="seccion__jpg" src="/images/pinturas-laura-cordoba.jpg" alt="Pinturas de Laura Cordoba"></section>
+        <section class="seccion__boton"><a href="/pages/pintura.html">Conocé todas las pinturas</a></section>
     </div>
 
-    <div class="contenedorBox wow">
-    <h2 class="tituloBox">¡Descubrí todos mis talleres!</h2>
-    <div class="box-wrap">
-        <div class="box">
-            <h2>COLLAGE: TALLER REGULAR</h2>
-            <p class="textoCajita">Ideal para quienes ya hayan explorado el collage por su cuenta. Clases todas las semanas durante todo el año.</p>
-            <a class="botonCajita" href="/pages/talleres.html">+ info</a>
+    <div class="tarjetas">
+    <h2 class="tarjetas__titulo">¡Descubrí todos los talleres!</h2>
+    <div class="tarjetas__contenedor">
+        <div class="tarjetas__caja">
+            <h3>COLLAGE: TALLER REGULAR</h3>
+            <p class="tarjetas__textoCaja">Ideal para quienes ya hayan explorado el collage por su cuenta. Clases todas las semanas durante todo el año.</p>
+            <a class="tarjetas__botonCaja" href="/pages/talleres.html">+ info</a>
         </div>
-        <div class="box">
-            <h2>COLLAGE: 8 ENCUENTROS</h2>
-            <p class="textoCajita">Si estás dando tus primeros pasos con el collage o nunca hiciste un taller conmigo, te recomiendo seguir con esta propuesta.</p>
-            <a class="botonCajita" href="/pages/talleres.html">+ info</a>
+        <div class="tarjetas__caja">
+            <h3>COLLAGE: 8 ENCUENTROS</h3>
+            <p class="tarjetas__textoCaja">Si estás dando tus primeros pasos con el collage o nunca hiciste un taller conmigo, te recomiendo seguir con esta propuesta.</p>
+            <a class="tarjetas__botonCaja" href="/pages/talleres.html">+ info</a>
         </div>
-        <div class="box">
-            <h2>COLLAGE INTENSIVO</h2>
-            <p class="textoCajita">Dos encuentros intensivos para descubrir la técnica del collage. Próxima edición: octubre de 2021.</p>
-            <a class="botonCajita" href="/pages/talleres.html">+ info</a>
+        <div class="tarjetas__caja--nuevo">
+            <h3>¡NUEVO! COLLAGE INTENSIVO</h3>
+            <p class="tarjetas__textoCaja">Dos encuentros intensivos para descubrir la técnica del collage. Próxima edición: octubre de 2021.</p>
+            <a class="tarjetas__botonCaja" href="/pages/talleres.html">+ info</a>
         </div>
     </div>
     </div>
@@ -212,7 +224,7 @@
 
   <form action="https://lauracordoba.us20.list-manage.com/subscribe/post?u=d620a5ada419085915bd67b0a&amp;id=48ed743eeb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <div id="mc_embed_signup_scroll">
-    <h2>¡Suscribite a mi newsletter!</h2>
+    <h3>¡Suscribite a mi newsletter!</h3>
   <div class="mc-field-group">
     <label for="mce-EMAIL">Email
   </label>
