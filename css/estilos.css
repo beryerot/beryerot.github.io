@@ -46,6 +46,10 @@
   color: black;
   transition: 500ms; }
 
+  .botonVideo:hover .botonVideo--taller{
+    color: red;
+  }
+
 .botonVideo--taller:hover {
   background-color: #F2836B;
   color: white;
