@@ -110,9 +110,9 @@
 .seccion__imagen {
   grid-area: imagen; }
 
-.seccion__imagen:hover {
+/* .seccion__imagen:hover {
   transform: scale(1.06);
-  transition: 2s; }
+  transition: 2s; } */
 
 @media only screen and (max-width: 1024px) {
   .seccion, .seccion--invertida {
@@ -238,9 +238,9 @@
   margin: 30px;
   justify-content: center; }
 
-.contenedor__imagenes:hover {
+/* .contenedor__imagenes:hover {
   transform: scale(1.06);
-  transition: 2s; }
+  transition: 2s; } */
 
 header {
   width: 100%; }
@@ -310,8 +310,8 @@ h1, h2 {
 
 :root {
   --main-bg-color: rgba(242, 153, 102, 0.5);
-  --menu-bg-color: rgba(255, 255, 255, 0.4);
-  --menuhover-bg-color: rgba(255, 255, 255, 0.8); }
+  --menu-bg-color: rgba(255, 255, 255, 0.8);;
+  --menuhover-bg-color: rgba(255, 255, 255); }
 
 li.nav-item.active {
   background-color: var(--main-bg-color); }
