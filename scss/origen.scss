@@ -63,7 +63,7 @@ $redes: (
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    height: 80vh;
+    height: 100vh;
     gap: 30px;
 }
 
@@ -174,11 +174,7 @@ $redes: (
 
 // BEM aplicado a tarjetas de talleres en el index
 
-.tarjetas{
 
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
 
 .tarjetas__contenedor{
     display:flex;
@@ -188,6 +184,8 @@ $redes: (
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .tarjetas__caja{
@@ -306,11 +304,11 @@ $redes: (
 }
 
 
-.contenedor__imagenes:hover{
+/* .contenedor__imagenes:hover{
 
     transform: scale(1.06);
     transition: 2s;
-}
+} */
 
 
 //Resto del código
@@ -390,8 +388,8 @@ text-align: center;
 }
 
 .galeriaColumn {
-    flex: 24%;
-    max-width: 24%;
+    flex: 25%;
+    max-width: 25%;
     padding: 0 4px;
 }
 
@@ -428,8 +426,8 @@ text-align: center;
   
 :root{
     --main-bg-color: rgba(242, 153, 102, 0.5);
-    --menu-bg-color: rgba(255, 255, 255, 0.4);
-    --menuhover-bg-color: rgba(255, 255, 255, 0.8);
+    --menu-bg-color: rgba(255, 255, 255, 0.8);
+    --menuhover-bg-color: rgba(255, 255, 255);
 }
 
 li.nav-item.active {
