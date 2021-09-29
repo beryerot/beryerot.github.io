@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,34 +8,7 @@
 
 @import "variables";
 
-//Mapa de colores para botones de redes sociales
-$redes: (
-        instagram: #7a3a06,
-        facebook:  #3a5795,
-        tiktok: #db380f
-); 
 
-@each $red, $color in $redes {
-   .boton--#{$red} {
-       background-color: $color;
-       font-size: 30px;
-       margin: auto 5px auto 5px;
-       padding: 10px;
-       color: white;
-       border: black 2px solid;
-       border-radius: 4px;
-       text-decoration: none;
-       flex-wrap: wrap;
-   }
-}
-
-.boxRedes {
-
-    display: flex;
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 .botonVideo:hover {
     background-color: white;
@@ -390,18 +365,27 @@ text-align: center;
 .galeriaColumn {
     flex: 25%;
     max-width: 25%;
-    padding: 0 4px;
+    padding: 0 10px;
+
+    img {
+        margin-top: 20px;
+        vertical-align: middle;
+        width: 100%;
+    }
 }
 
-.galeriaColumn img {
-    margin-top: 8px;
-    vertical-align: middle;
-}
+
+
 
 @media (max-width: 800px) {
     .galeriaColumn {
         flex: 48%;
         max-width: 48%;
+    }
+    .galeriaColumn img {
+        margin-top: 20px;
+        vertical-align: middle;
+        width: 100%;
     }
 }
 
@@ -409,6 +393,11 @@ text-align: center;
     .galeriaColumn {
         flex: 100%;
         max-width: 100%;
+    }
+    .galeriaColumn img {
+        margin-top: 20px;
+        vertical-align: middle;
+        width: 100%;
     }
 }
 
@@ -450,22 +439,23 @@ li.nav-item.active {
 
   .bg-blanco{
 
-    background-color:var(--menu-bg-color);
+    background-color:rgba(255, 255, 255, 0.8);
   }
 
   .bg-blanco:hover{
-    background-color:var(--menuhover-bg-color)
+    background-color:rgba(255, 255, 255, 1)
   }
 
   .bg-blancosec{
-    background-color:var(--menuhover-bg-color)
+    background-color:rgba(255, 255, 255, 1)
   }
 
   .btnEdit {
     
-    background-color:var(--main-bg-color);
+    background-color:rgba(242, 153, 102, 0.5);
 }
 
 .botonEnviar{
     margin-top: 15px;
+    text-decoration: none;
 }
