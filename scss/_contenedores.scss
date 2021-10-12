@@ -1,0 +1,304 @@
+/* Estos elementos son los que en la home presentan las distintas técnicas Dibujo, Pintura Collage */
+
+.seccion {
+    display: grid;
+    grid-template-areas:
+    "imagen titulo"
+    "imagen texto"
+    "imagen boton";
+    grid-template-rows: auto auto auto; 
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    gap: 30px;
+}
+
+.seccion--invertida {
+    display: grid;
+    grid-template-areas:
+    "titulo imagen"
+    "texto imagen"
+    "boton imagen";
+    grid-template-rows: auto auto auto; 
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80vh;
+    gap: 30px;
+}
+
+.seccion__texto{
+
+    text-align: justify;
+}
+
+.seccion__jpg{
+
+    width: 100%;
+    justify-items: center;
+
+
+}
+
+.seccion__titulo{
+
+    text-decoration: underline $colorSec solid 2px;
+    text-underline-offset: 5px;  
+    grid-area: titulo;
+    margin-top: 10%;
+    justify-items: center;
+
+}
+.seccion__boton{
+    grid-area: boton;
+    margin-bottom: 10%;
+    justify-items: center;
+
+}
+
+.seccion__texto{
+    grid-area: texto;
+    text-align: justify;
+    line-height: 25px;
+
+}
+
+.seccion__imagen{
+    grid-area: imagen;
+}
+
+.seccion__imagen:hover{
+
+    transform: scale(1.06);
+    transition: 2s;
+}
+
+@media only screen and (max-width: 1024px){
+
+    .seccion, .seccion--invertida{
+
+        display: grid;
+        grid-template-areas:
+        "titulo"
+        "imagen"
+        "texto"
+        "boton";
+        grid-template-rows: 1fr auto auto 1fr; 
+        grid-template-columns: 1fr;
+        gap: 30px;
+        height: fit-content;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+
+    .seccion__texto{
+        text-align: justify;
+        line-height: 25px;
+        width: 100%;    
+    }
+    
+    
+
+    .seccion__imagen{
+        width: 80%;
+        justify-items: center;
+        max-width: 400px;
+        transition: 2s;
+    }
+}
+
+/* Estos elementos son las tarjetas de talleres que hay casi al final de la home */
+
+.tarjetas__contenedor{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tarjetas__caja{
+    padding:30px;
+    margin:1%;
+    background:white;
+    width: 300px;
+    height: 320px;
+    border:1px solid #d6d6d6;
+    box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
+    border-radius:3px;
+    transition:.2s all; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tarjetas__caja--nuevo{
+    padding:30px;
+    margin:1%;
+    background:white;
+    width: 300px;
+    height: 320px;
+    border:5px solid $colorSec;
+    box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
+    border-radius:3px;
+    transition:.2s all; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tarjetas__contenedor:hover .tarjetas__caja{
+    filter:blur(3px);
+    opacity:.5;
+    transform: scale(.98);
+    box-shadow:none;
+}
+
+.tarjetas__contenedor:hover .tarjetas__caja:hover{
+    transform:scale(1);
+    filter:blur(0px);
+    opacity:1;
+    box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+
+}
+
+.tarjetas__contenedor:hover .tarjetas__caja--nuevo{
+    filter:blur(3px);
+    opacity:.5;
+    transform: scale(.98);
+    box-shadow:none;
+
+}
+
+.tarjetas__contenedor:hover .tarjetas__caja--nuevo:hover{
+    transform:scale(1);
+    filter:blur(0px);
+    opacity:1;
+    box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+    
+}
+
+.tarjetas__textoCaja{
+    text-align: justify;
+    line-height: 23px;
+}
+
+.tarjetas__botonCaja{
+
+    text-decoration: none;
+    color: black;
+    background-color: $colorSec ;
+    max-width: fit-content;
+}
+
+.tarjetas__titulo{
+
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tarjetas__caja h2{
+
+    text-decoration: underline $colorSec solid 2px;
+    text-underline-offset: 5px;  
+}
+
+.tarjetas__caja--nuevo h2{
+
+    text-decoration: underline $colorSec 2px;
+    text-underline-offset: 5px;  
+}
+
+
+/* Estos elementos ordenan las imágenes que hay en las páginas de Obras: Collage / Dibujo / Pintura */
+
+.galeriaRow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 4px;
+}
+
+.galeriaColumn {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 10px;
+
+    img {
+        margin-top: 20px;
+        vertical-align: middle;
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .galeriaColumn {
+        flex: 48%;
+        max-width: 48%;
+    }
+    .galeriaColumn img {
+        margin-top: 20px;
+        vertical-align: middle;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .galeriaColumn {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .galeriaColumn img {
+        margin-top: 20px;
+        vertical-align: middle;
+        width: 100%;
+    }
+}
+
+/* Estos elementos son los que ordenan las imágenes que hay en las secciones Talleres y Contacto */
+
+.contenedor{
+
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.contenedor__imagenes{
+
+    width: 500px;
+    margin: 30px;
+    justify-content: center;
+
+}
+
+
+.contenedor__imagenes:hover{
+
+    transform: scale(1.06);
+    transition: 2s;
+}

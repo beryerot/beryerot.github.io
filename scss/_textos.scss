@@ -1,0 +1,51 @@
+/* Estos elementos determinan la estética de los textos que figura en la web */
+
+h1, h2{
+
+    color: #333;
+    
+    text-align: center;
+    clear: both;
+    
+    }
+    
+    .tituloWeb{
+    
+        color: #333;
+    
+        text-align: center;
+        clear: both;
+        margin-top: 80px;
+        margin-bottom: 2%;
+        
+        }
+    
+        .tituloSec{
+    
+            text-decoration: underline $colorSec solid 2px;
+            text-underline-offset: 5px; }
+    
+    .textoLargo{
+        line-height: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        text-align: justify;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    
+    }
+    
+    .tituloTextoLargo{
+        line-height: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        text-align: justify;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-decoration: underline $colorSec solid 2px;
+        text-underline-offset: 5px;  
+    
+    }
+    
